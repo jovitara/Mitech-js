@@ -71,3 +71,4 @@ $(document).ready(function(){
     });
   });
 });
+//jei animacija dedama teviniam elementui - veiks ir be position absolute
