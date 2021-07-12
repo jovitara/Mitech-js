@@ -182,3 +182,18 @@ i {
 .list-numb-link:hover .list-number{
     color: #0a58ca;
 }
+
+.infotechno-video-wraper{
+    min-height: 500px;
+    background-image: url(..//img/home-infotechno-video-intro-bg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.video-play{
+    border-radius: 100%;
+    width: 20px;
+    height: 65px;
+}
+.la-play{
+margin: 0 auto;
+}
