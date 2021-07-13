@@ -78,11 +78,51 @@ jQuery(window).load(function(){
   setTimeout(function(){
     jQuery('.loader').hide();
   }, 500) 
-})
+});
 
 
 jQuery('.button-element').on('click', function(e){
   e.prevetDefault();
   jQuery('html,body').animate({scrollTop: 0 }, 'fast');
 
-})
+});
+
+
+
+// jQuery(window).on('scroll', function(){
+
+//   let virsus = jQuery(document).scrollTop();
+//   let puslapioAukstis = jQuery(document).height();
+//   let langoAukstis = jQuery(window).height();
+//   let bendras = virsus + langoAukstis;
+
+//   if(bendras == puslapioAukstis) {
+//     jQuery('.scroll-top').addClass('show');
+//       }
+//       if (virsus + langoAukstis < puslapioAukstis - 800){
+//         jQuery('.scroll-top').removeClass('show');
+//       }
+// });
+
+jQuery(window).on('scroll', function() {
+  let virsus          = jQuery(document).scrollTop();
+  let puslapioAukstis = jQuery(document).height();
+  let langoAukstis    = jQuery(window).height();
+  let bendras         = virsus + langoAukstis;
+ 
+  // console.log(virsus);
+  // console.log(puslapioAukstis);
+  // console.log(langoAukstis);
+  // console.log(bendras);
+
+  if(bendras == puslapioAukstis) {
+    console.log('Yra');
+
+    jQuery('.scroll-top').addClass('show');
+  } 
+
+  if(virsus + langoAukstis < puslapioAukstis - 400) {
+    jQuery('.scroll-top').removeClass('show');
+  }
+
+});
