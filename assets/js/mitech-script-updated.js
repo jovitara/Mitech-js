@@ -72,3 +72,17 @@ $(document).ready(function(){
   });
 });
 //jei animacija dedama teviniam elementui - veiks ir be position absolute
+
+jQuery(window).load(function(){
+  jQuery('.loader').addClass ('hide');
+  setTimeout(function(){
+    jQuery('.loader').hide();
+  }, 500) 
+})
+
+
+jQuery('.button-element').on('click', function(e){
+  e.prevetDefault();
+  jQuery('html,body').animate({scrollTop: 0 }, 'fast');
+
+})
