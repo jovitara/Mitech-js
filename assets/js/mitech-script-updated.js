@@ -126,3 +126,23 @@ jQuery(window).on('scroll', function() {
   }
 
 });
+
+
+ $('.counter').each(function(){
+   var $this = $(this),
+   countTo = $(this).data('count');
+ 
+   $({countNum: 0}).animate({
+     countNum: countTo
+   }, {
+     duration: 8000,
+     easing:'linear',
+    step: function(){
+     $this.text(Mathfloor(this.countNum));
+     },
+     complete: function(){
+       $this.text(this.countNum);
+     }
+  });
+ });
+

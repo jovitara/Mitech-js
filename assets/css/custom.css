@@ -125,3 +125,9 @@ a, button, img, input {
     -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.rezults-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
