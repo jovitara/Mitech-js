@@ -135,10 +135,10 @@ jQuery(window).on('scroll', function() {
    $({countNum: 0}).animate({
      countNum: countTo
    }, {
-     duration: 8000,
+     duration: 1000,
      easing:'linear',
     step: function(){
-     $this.text(Mathfloor(this.countNum));
+     $this.text(Math.floor(this.countNum));
      },
      complete: function(){
        $this.text(this.countNum);
